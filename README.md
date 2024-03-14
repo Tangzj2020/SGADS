@@ -1,5 +1,19 @@
 
-# SGADS: Safe and Generalized end-to-end Autonomous Driving System with Reinforcement Learning and Demonstrations
+SGADS: Safe and Generalized end-to-end Autonomous Driving System with Reinforcement Learning and Demonstrations
+======
 
-* An intelligent driving system should be capable of dynamically formulating appropriate driving strategies based on the current environment and vehicle status, while ensuring the security and reliability of the system. However, existing methods based on reinforcement learning and imitation
-learning suffer from low safety, poor generalization, and inefficient sampling. Additionally, they cannot accurately predict future driving trajectories, and the accurate prediction of future driving trajectories is a precondition for making optimal decisions. To solve these problems, in this paper, we introduce a Safe and Generalized end-to-end Autonomous Driving System (SGADS) for complex and various scenarios. Our SGADS incorporates variational inference with normalizing flows, enabling the intelligent vehicle to accurately predict future driving trajectories. Moreover, we propose the formulation of robust safety constraints. Furthermore, we combine reinforcement learning with demonstrations to augment search process of the agent. The experimental results demonstrate that our SGADS can significantly improve safety performance, exhibit strong generalization, and enhance the training efficiency of intelligent vehicles in complex urban scenarios compared to existing methods.
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md) ![example](https://img.shields.io/badge/Python-API-red.svg) ![example](https://img.shields.io/badge/Ubuntu-18.04-yellow.svg) ![example](https://img.shields.io/badge/Logitech-G29-yellow.svg) ![example](https://img.shields.io/badge/CARLA-0.9.10-yellow.svg)
+ 
+## The overview of Human expert collects the datasets via the Logitech G29 steering wheel. This repo is part of [SGADS](https://github.com/Tangzj2020/SGADS) 
+![images](G29.png)
+
+
+## 1.Install CARLA
+* Based on Ubuntu 18.04
+* Download  [CARLA_0.9.10](https://github.com/carla-simulator/carla/releases)
+
+    `$ export PYTHONPATH=$PYTHONPATH:$YourFolder$/CARLA_0.9.10/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64.egg`
+    
+    `$ cd ~/YourFolder/CARLA_0.9.10/PythonAPI/examples $` and `Add manual_control_steeringwheel_G29.py`
+  
+    `$ pip install pygame==1.9.6 $`

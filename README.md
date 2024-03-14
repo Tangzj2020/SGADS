@@ -7,4 +7,4 @@
 ##  Overview of the Safe and Generalized end-to-end Autonomous Driving with Reinforcement Learning and Demonstrations. 
 ![images](framework.png)
 
-## [Project pages](https://sites.google.com/view/sgads-proj/sgads)
+## [SGADS project pages](https://sites.google.com/view/sgads-proj/sgads)
